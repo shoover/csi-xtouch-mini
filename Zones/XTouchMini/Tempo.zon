@@ -1,0 +1,5 @@
+Zone "Tempo"
+     Decrease+Rotary5    Reaper 41130 // Tempo: Decrease current project tempo 01 BPM
+     Increase+Rotary5    Reaper 41129 // Tempo: Increase current project tempo 01 BPM
+     LowerButton5       LeaveSubZone
+ZoneEnd

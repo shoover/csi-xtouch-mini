@@ -1,0 +1,7 @@
+Zone Track
+	Rotary|					TrackVolume
+	Shift+Rotary|			TrackPan
+	UpperButton| 			TrackRecordArm
+	Shift+UpperButton| 		TrackMute
+	Option+UpperButton|		TrackSolo
+ZoneEnd

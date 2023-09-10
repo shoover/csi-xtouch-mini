@@ -1,0 +1,19 @@
+// The VST plugin works, but it's not worth maintaining two zones. Just use
+// VST3 in all projects.
+Zone "VST: S-Gear 3 (Scuffham Amps)" "S-Gear 3"
+     Rotary1       FXParam 31                 // Gain A
+     Rotary2       FXParam 32 // Bass A
+     Rotary3       FXParam 33 // Mid A
+     Rotary4	FXParam 34 "Treble (A)"
+	Rotary5 FXParam 35 "Presence (A)"
+	Rotary7 FXParam 36 "Level (A)"
+	Rotary8 FXParam 3 "Input Trim"
+
+	Fader FXParam 4 "Output Trim"
+
+     UpperButton8  FXParam 15 [ 0.0 1.0 ]     // Toggle tuner
+
+     // Preset -/+
+     LowerButton3 FxParam 1 [ 1.00 0.88 0.75 0.63 0.00 ]
+     LowerButton4 FxParam 1 [ 0.00 0.13 0.25 0.38 0.50 0.63 0.75 0.88 1.00 ]
+ZoneEnd

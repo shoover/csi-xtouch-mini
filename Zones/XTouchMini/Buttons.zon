@@ -1,0 +1,34 @@
+Zone Buttons
+     SubZones
+        "Tempo"
+     SubZonesEnd
+     
+     // MC Mode
+     Hold+LowerButton1 SendMIDIMessage "b0 7f 00" // Force Standard mode
+     //Hold+LowerButton1 GoPage "HomeStd"
+
+	LowerButton1 			Bank Track -8
+	LowerButton2 			Bank Track 8
+    LowerButton3            Rewind
+    LowerButton4            FastForward
+	Hold+LowerButton3 			Reaper 40172 // Project start
+	Hold+LowerButton4 			Reaper 40173 // Project end
+	LowerButton5 			CycleTimeline
+    Hold+LowerButton5       GoSubZone "Tempo"
+	LowerButton6 			Stop
+	LowerButton7 			Play
+	LowerButton8 			Record
+	UpperButtonA			Shift
+	LowerButtonB			Option
+
+
+    // Standard Mode: layers A and B
+
+    Hold+LowerButton1A SendMIDIMessage "b0 7f 01" // Force MC mode
+    Hold+LowerButton1B SendMIDIMessage "b0 7f 01" // Force MC mode
+     //Hold+LowerButton1A GoPage "Home"
+     //Hold+LowerButton1B GoPage "Home"
+
+	LowerButton6A 			Stop
+	LowerButton7A 			Play
+ZoneEnd

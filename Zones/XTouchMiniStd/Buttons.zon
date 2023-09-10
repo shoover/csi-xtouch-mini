@@ -1,0 +1,19 @@
+Zone Buttons
+     //Hold+LowerButton1 SendMIDIMessage "b0 7f 00" // Force Standard mode
+     //Hold+LowerButton1 Reaper 40004 // File: Quit REAPER
+     Hold+LowerButton1A GoPage "Home"
+     Hold+LowerButton1B GoPage "Home"
+
+	LowerButton1A 			Bank Track -8
+	LowerButton2 			Bank Track 8
+    LowerButton3            Rewind
+    LowerButton4            FastForward
+	Shift+LowerButton3 			Reaper 40172 // Project start
+	Shift+LowerButton4 			Reaper 40173 // Project end
+	LowerButton5 			CycleTimeline
+	LowerButton6A 			Stop
+	LowerButton7A 			Play
+	LowerButton8 			Record
+	UpperButtonA			Shift
+	LowerButtonB			Option
+ZoneEnd

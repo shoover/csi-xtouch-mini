@@ -1,0 +1,13 @@
+Zone Home
+OnInitialization SendMIDIMessage "b0 7f 01" // Force MC mode
+//OnPageEnter SendMIDIMessage "b0 7f 01" // Force MC mode
+//OnPageLeave SendMIDIMessage "b0 7f 00" // Force Standard mode
+OnZoneActivation SendMIDIMessage "b0 7f 01" // Force MC mode
+OnZoneDeactivation SendMIDIMessage "b0 7f 00" // Force Standard mode
+
+	IncludedZones
+		Buttons
+		Track
+		MasterTrack
+	IncludedZonesEnd
+ZoneEnd

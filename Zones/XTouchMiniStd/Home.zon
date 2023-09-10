@@ -1,0 +1,16 @@
+// This zone doesn't really work because I don't know a good way to keep
+// stateful controls in the controller in sync with state in Reaper. Just
+// use the MC-based zone.
+
+Zone Home
+//OnInitialization SendMIDIMessage "b0 7f 01" // Force MC mode
+//OnPageEnter SendMIDIMessage "b0 7f 00" // Force Standard mode
+//OnPageLeave SendMIDIMessage "b0 7f 00" // Force Standard mode
+OnZoneActivation SendMIDIMessage "b0 7f 00" // Force Standard mode
+
+	IncludedZones
+		Buttons
+		Track
+		MasterTrack
+	IncludedZonesEnd
+ZoneEnd
