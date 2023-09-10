@@ -10,4 +10,5 @@ Zone summary:
   standalone MIDI mappings).
 - Global tempo change subzone.
 
-To install on Windows, clone into %APPDATA%\CSI.
+To install, follow the instructions in the CSI wiki but replace the files in
+%APPDATA%\CSI (Windows) with a clone of the repo.
